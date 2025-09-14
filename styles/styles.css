@@ -1,0 +1,112 @@
+/* General Page Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav li {
+  margin: 0 1em;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  max-width: 800px;        /* limit width */
+  margin: 2em auto;
+  padding: 1em;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+main img {
+  width: 150px;            /* main profile image only */
+  height: auto;
+  border-radius: 50%;
+  margin: 1em 0;
+}
+
+/* Aside Section */
+aside {
+  max-width: 300px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #e6f2f7; /* subtle blue background */
+  color: #222;
+  border: 1px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  margin-bottom: 1em;
+}
+
+aside img {
+  width: 200px;             /* required size */
+  height: auto;             /* maintain aspect ratio */
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+aside p {
+  padding: 0;               /* reset padding */
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;          /* space above footer */
+  border-top: 2px solid #555; /* visual separation from main content */
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive images */
+@media (max-width: 600px) {
+  main img {
+    width: 120px;
+  }
+  
+  aside img {
+    width: 150px;
+  }
+}
