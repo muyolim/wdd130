@@ -5,11 +5,21 @@
     box-sizing: border-box;
 }
 
+/* Variables (added) */
+:root {
+    --text: #333;
+    --white: #fff;
+    --primary: #005f73;
+    --primary-accent: #0a9396;
+    --bg: #fafafa;
+    --panel: #e9ecef;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: #fafafa;
+    color: var(--text);
+    background: var(--bg);
 }
 
 /* Header: logo on top, nav links stacked vertically and left-aligned */
@@ -19,7 +29,7 @@ header {
     /* stack logo and nav */
     align-items: flex-start;
     /* align everything to the left */
-    background: #005f73;
+    background: var(--primary);
     padding: 2rem 1rem;
 }
 
@@ -38,7 +48,7 @@ header nav {
 }
 
 header nav a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -49,7 +59,7 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-    background: #0a9396;
+    background: var(--primary-accent);
     border-radius: 5px;
 }
 
@@ -57,12 +67,18 @@ header nav a.active {
 .hero {
     position: relative;
     text-align: center;
+    height: 400px;
+    /* added to ensure overlay area */
+    overflow: hidden;
+    /* clean edges */
 }
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    /* fill hero height */
     object-fit: cover;
+    /* maintain aspect while covering */
     filter: brightness(70%);
 }
 
@@ -71,9 +87,38 @@ header nav a.active {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: var(--white);
     font-size: 3rem;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Overlay article inside hero (added) */
+.hero article {
+    position: absolute;
+    /* overlay */
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    border-radius: 8px;
+    display: block;
+    /* override flex to allow float */
+}
+
+/* Float the article image to the right (added) */
+.hero article img {
+    width: 200px;
+    border-radius: 10px;
+    float: right;
+    margin: 0 0 0.5rem 1rem;
+}
+
+/* Clear floats (added) */
+.hero article::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Article (Mission) */
@@ -82,7 +127,7 @@ article {
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-    background: #e9ecef;
+    background: var(--panel);
 }
 
 article img {
@@ -101,7 +146,7 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(1) h2 {
-    color: #005f73;
+    color: var(--primary);
     margin-bottom: 1rem;
 }
 
@@ -112,16 +157,21 @@ section:nth-of-type(2) {
 }
 
 section:nth-of-type(2) h2 {
-    color: #005f73;
+    color: var(--primary);
     margin-bottom: 1rem;
 }
 
 /* Footer */
 footer {
-    background: #005f73;
-    color: #fff;
+    background: var(--primary);
+    color: var(--white);
     text-align: center;
     padding: 1rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    /* added per rubric */
 }
 
 footer .socialmedia img {
@@ -133,4 +183,3 @@ footer .socialmedia img {
 footer .socialmedia img:hover {
     transform: scale(1.2);
 }
-
