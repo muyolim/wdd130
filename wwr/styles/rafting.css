@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fafafa;
+}
+
+/* Header: logo on top, nav links stacked vertically and left-aligned */
+header {
+    display: flex;
+    flex-direction: column;
+    /* stack logo and nav */
+    align-items: flex-start;
+    /* align everything to the left */
+    background: #005f73;
+    padding: 2rem 1rem;
+}
+
+header .logo {
+    height: 80px;
+    margin-bottom: 1.5rem;
+    /* space between logo and nav */
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    /* vertical links */
+    gap: 1rem;
+    width: 100%;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+    display: block;
+    /* ensures full clickable area */
+}
+
+header nav a:hover,
+header nav a.active {
+    background: #0a9396;
+    border-radius: 5px;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Article (Mission) */
+article {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: #e9ecef;
+}
+
+article img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+article p {
+    flex: 1;
+}
+
+/* History Section */
+section:nth-of-type(1) {
+    padding: 2rem;
+    text-align: center;
+}
+
+section:nth-of-type(1) h2 {
+    color: #005f73;
+    margin-bottom: 1rem;
+}
+
+/* Adventure Section */
+section:nth-of-type(2) {
+    padding: 2rem;
+    text-align: center;
+}
+
+section:nth-of-type(2) h2 {
+    color: #005f73;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #005f73;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .socialmedia img {
+    width: 30px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s;
+}
+
+footer .socialmedia img:hover {
+    transform: scale(1.2);
+}
+
