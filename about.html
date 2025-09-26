@@ -1,31 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WDD130 | About Me</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Learn about White Water Rafting Co. — our mission, history, and passion for adventure.">
+  <meta name="author" content="Daniel Mukonda">
+  <title>About Us | White Water Rafting Co.</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header>
-    <h1>About Me</h1>
+    <img src="images/logo.png" alt="White Water Rafting Logo" class="logo">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main>
-    <h2>Who am I?</h2>
-    <p>Hello, my name is [Your Name]. I am currently studying Web Development in the WDD130 course. This website will showcase the projects and assignments I complete as I learn HTML and CSS.</p>
+
+    <!-- HERO -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Rafting Adventure on Rapids" class="hero-img">
+      <h1>White Water Rafting Co.</h1>
+      <article class="hero-overlay">
+        <img src="images/guide.jpg" alt="Happy rafting guide">
+        <p>Thrilling rafting adventures with safety, fun, and breathtaking views. Join us and make memories
+          that last a lifetime.</p>
+      </article>
+    </section>
+
+    <!-- MISSION -->
+    <article class="mission">
+      <img src="images/guide.jpg" alt="Happy rafting guide">
+      <div>
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide safe, thrilling, and unforgettable white water rafting experiences
+          for adventurers of all ages. We believe in teamwork, fun, and respect for nature.</p>
+      </div>
+    </article>
+
+    <!-- HISTORY -->
+    <section class="history">
+      <h2>History</h2>
+      <p>
+        Founded in 1995, White Water Rafting Co. started with one raft and a dream. Over the years, we’ve guided
+        thousands through breathtaking rapids and built a reputation for adventure, safety, and fun. From humble
+        beginnings, we’ve grown into one of the most trusted rafting companies in the region.
+      </p>
+    </section>
+
+    <!-- ADVENTURES -->
+    <section class="adventures">
+      <h2>Adventure Awaits You!</h2>
+      <div class="adventure-gallery">
+        <figure>
+          <img src="images/adventure1.jpg" alt="Los Dientes del Diablo">
+          <figcaption>Los Dientes del Diablo</figcaption>
+        </figure>
+        <figure>
+          <img src="images/adventure2.jpg" alt="Big Mallard">
+          <figcaption>Big Mallard</figcaption>
+        </figure>
+        <figure>
+          <img src="images/adventure3.jpg" alt="Half Day Adventure">
+          <figcaption>Half Day Adventure</figcaption>
+        </figure>
+        <figure>
+          <img src="images/adventure4.jpg" alt="Full Day Rapids">
+          <figcaption>Full Day Rapids</figcaption>
+        </figure>
+        <figure>
+          <img src="images/adventure5.jpg" alt="Extreme Ride">
+          <figcaption>Extreme Ride</figcaption>
+        </figure>
+      </div>
+    </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 | muyolim | WDD130</p>
+    <p>&copy; 2025 White Water Rafting Co. | Daniel Mukonda</p>
+    <div class="social">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
   </footer>
-</body>
-</html>
 
+</body>
+
+</html>
