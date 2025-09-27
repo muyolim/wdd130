@@ -1,0 +1,203 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Lobster', cursive;
+  margin: 0.5em 0;
+  color: #004d66;
+}
+
+/* Header Layout */
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  padding: 1rem;
+  background-color: #004d66;
+  color: white;
+}
+
+.logo {
+  width: 100%;
+  max-width: 120px;
+  justify-self: start;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #0099cc;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 77, 102, 0.8);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.hero-overlay img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Mission Section */
+.mission {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #e6f7ff;
+}
+
+.mission img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.mission div {
+  max-width: 600px;
+}
+
+/* History Section */
+.history {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.history h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Adventures Gallery */
+.adventures {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.adventure-gallery figure {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #e6f7ff;
+  border-radius: 8px;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d66;
+  color: white;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .social {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .social img {
+  width: 30px;
+  height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mission {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1,
+  .hero-overlay {
+    position: static;
+    margin: 1rem 0;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .social {
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}
