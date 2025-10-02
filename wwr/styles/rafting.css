@@ -338,3 +338,10 @@ footer .social img {
     width: 100%;
   }
 }
+.contact-banner {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+}
