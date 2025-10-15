@@ -214,4 +214,128 @@ footer .social img {
     margin-top: 0.5rem;
   }
 }
+/* === CONTACT PAGE FIXES === */
+.company-info-centered {
+  background-color: #e6f7ff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
 
+.contact-form-section {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.form-map-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.map-container iframe {
+  border-radius: 10px;
+}
+
+.form-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+input,
+textarea,
+select {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #666;
+}
+
+button[type="submit"] {
+  background-color: #004d66;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #006680;
+}
+
+.employee-profiles-horizontal {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.employee-profiles-horizontal figure {
+  max-width: 200px;
+}
+
+.employee-profiles-horizontal img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.employee-profiles-horizontal figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+/* === TRIPS PAGE FIXES === */
+.trip-table {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.trip-table th {
+  background-color: #e6f7ff;
+  color: #004d66;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: rgba(0, 77, 102, 0.85);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 350px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero-overlay img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
